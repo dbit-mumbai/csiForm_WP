@@ -1,0 +1,131 @@
+<html>
+<head>
+<title>CSI Membership Form</title>
+<script src="validation.js"></script>
+<link rel="stylesheet" type="text/css" href="csi.css">
+</head>
+<table style="background:radial-gradient(#b0e8f2,#60a4af,#11343a);">
+<tr>
+<td id="header"><img src="dbit.png" alt="DBIT LOGO" style= "width:40% ;height:40% align:left"></td>
+<td style="width:60%;height:15%;align:"center""><font size="6">DON BOSCO INSTITUTE OF TECHNOLOGY</font></td>
+<td id="header"><img src="csilogo.jpg" alt="CSI LOGO" style="width:50%;height:14%;"align=right></td>
+</tr>
+</table>
+</head><br><br>
+<center><font size=5><strong>CSI MEMBERSHIP FORM</strong></font></center>
+<center>
+<ul id="ud1">
+<table cellspacing=30% align='center'>
+<tr>
+<th><ul ><a href="#home">Home</a></ul></th>
+<th><ul><a href="#news">News</a></ul></th>
+<th><ul><a href="#contact">Contact</a></ul></th>
+<th><ul><a href="#about">About</a></ul></th>
+</tr></table></ul>
+<br><br>
+</center>
+<form name="registration" action="register.php" method="POST" onsubmit="return validateForm()">
+
+<center>
+<fieldset>
+<legend>
+<font size="5">Personal Details</font></legend><br>
+<table id="table" cellpadding="10%">
+<tr><td><font size="4">First Name:</td><td></font> <input type="text" name="fname"></td></tr>
+<tr><td><font size="4">Middle Name:</td><td></font> <input type="text" name="mname"></td></tr>
+<tr><td><font size="4">Last Name:</td></font><td> <input type="text" name="lname"><br><br></td></tr>
+<tr><td><font size="4">Date of Birth:</td><td> </font> <input type="date" name="birthdate"/><br><br></td></tr>
+<tr><td><font size="4" id="gender">Gender: </td>
+
+<td><input type="radio" name="gender" value="male" > Male 
+    <input type="radio" name="gender" value="female"> Female 
+	<input type="radio" name="gender" value="transgender"> Transgender</td></tr></font>
+
+<tr><td><font size="4">Contact Number: +91</font></td><td> <input type="number"  name="mobno"/></td></tr>
+<tr><td><font size="4">Email id: </font></td> <td><input type="text" name="emailid" ><br><br></td></tr>
+<tr><td><font size="4">Address:</td><td><textarea name="addr" rows="6" cols="32"></textarea> </font></td></tr>
+<tr><td><font size="4">City: </font> </td><td><input type="text" name="city"></td></tr>
+</table>
+</fieldset>
+
+<fieldset>
+<legend><font size="5">College Details</font></legend><br>
+<table cellpadding="10%"><tr><td><font size="4">Department:</td>
+<td><select name="Department">
+  <option value="IT">IT</option>
+  <option value="Computer Science">Comps</option>
+  <option value="EXTC">EXTC</option>
+  <option value="Mechanical">MECH</option></font>
+</select></td></tr>
+
+<tr><td><font size="4">Class: </font></td>
+<td><input type="radio" name="class" value="FE" checked > FE 
+  <input type="radio" name="class" value="SE"> SE 
+  <input type="radio" name="class" value="TE"> TE 
+  <input type="radio" name="class" value="BE"> BE </td></tr>
+<tr><td><font size="4">Student id:</td> 
+<td><input type="number" name="sid"></font>
+eg:2015134213</td></tr>
+</table>
+</fieldset><br><br>
+
+<fieldset>
+<legend><font size="5">Technical Skills</font></legend>
+<table cellpadding="10%" style="font-size:19;">
+<tr><td><input type="checkbox" name="t1" value="C">C</td>
+<td><input type="checkbox" name="t2" value="Photoshop">Photoshop</td></tr>
+<td><input type="checkbox" name="t3" value="Java">Java</td>
+<td><input type="checkbox" name="t4" value="Wordpress">Wordpress</td></tr>
+<td><input type="checkbox" name="t5" value="MY SQL">My SQL</td>
+<td><input type="checkbox" name="t6" value="PHP">PHP</td></tr>
+<tr><td>Others:</td><td><textarea name="other" rows="5" cols="32"></textarea> </td>
+</font></table>
+<br><br><br>
+</fieldset>
+<br><br>
+
+<fieldset>
+<legend>
+
+<font size="5">Membership Period: </font></legend>
+
+<table cellpadding="10%">
+<tr><td><font size="4">Membership Date:</font></td></tr>
+<tr><td><font size="4">DBIT CSI Membership:</td>
+<td><input type="radio" name="year" value="1" checked> 1 year </td>
+  <td><input type="radio" name="year" value="2"> 2 years </td>
+  <td><input type="radio" name="year" value="3"> 3 years </td>
+<td><input type="radio" name="year" value="none"> none</td></tr>
+
+<tr><td><font size="4">INDIA CSI Membership:</td>
+<td><input type="radio" name="year" value="1" checked> 1 year</td> 
+  <td><input type="radio" name="year" value="2"> 2 years</td>
+  <td><input type="radio" name="year" value="3"> 3 years</td>
+<td><input type="radio" name="year" value="lifetime"> Lifetime</td></tr>
+<tr><td><font size="4">Amount to be paid:</font></td></tr></table>
+</font>
+</fieldset><br><br>
+<input type="submit">
+
+</center>
+  
+</form>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
